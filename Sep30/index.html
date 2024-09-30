@@ -4,14 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript</title>
 
 </head>
 
 <body>
 
     <script>
+        {
+            var x = 50; //global level scope
+            console.log(x);
+            let y = 200; //local scope
+            console.log(y);
+            const z = 18;
+            console.log(z);
+        }
         console.log("Helloooo");
+        console.log(x);
+        console.log(typeof (x));
+        let y = "Hello"
+        console.log(typeof (y));
+        // console.log(y); //error
+        // console.log(z); //error
+        let a = Symbol(7);
+        let b = Symbol(7);
+        console.log(a == b);
+        let student = {
+            name: "Sneha",
+            rollNo: 43,
+        }
+        console.log(student);
+        console.log(student["name"]);//key-value pair, write key
     </script>
 
     <script src="./first.js"></script>
